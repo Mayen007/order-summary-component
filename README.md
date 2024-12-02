@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - **Solution URL**: [Github Repository](https://github.com/Mayen007/order-summary-component)
-- **Live Site URL**: [Live preview of the project](https://your-live-site-url.com)
+- **Live Site URL**: [Live preview of the project](https://mayen007.github.io/order-summary-component/)
 
 ## My Process
 
