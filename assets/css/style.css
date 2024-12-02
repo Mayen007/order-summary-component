@@ -1,0 +1,208 @@
+:root {
+  /* Primary Colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+@font-face {
+  font-family: 'RedHatDisplay-Medium';
+  src: url(../fonts/static/RedHatDisplay-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedHatDisplay-Bold';
+  src: url(../fonts/static/RedHatDisplay-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedHatDisplay-Black';
+  src: url(../fonts/static/RedHatDisplay-Black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'RedHatDisplay-Medium', sans-serif;
+  color: var(--dark-blue);
+  background: url(../images/pattern-background-desktop.svg), var(--pale-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card {
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 340px;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card__title {
+  font-family: 'RedHatDisplay-Black', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.card__description {
+  font-size: 16px;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card__details {
+  padding: 1rem;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-color: hsl(229, 89%, 96%);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.card__icon {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  background-color: var(--pale-blue);
+}
+
+.icon__card__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__heading {
+  font-family: 'RedHatDisplay-Bold', sans-serif;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+}
+
+
+.card__subheading {
+  font-family: 'RedHatDisplay-Bold', sans-serif;
+  font-size: 0.85rem;
+  color: var(--desaturated-blue);
+  margin-top: 0.1rem;
+}
+
+.card__change {
+  font-family: 'RedHatDisplay-Medium', sans-serif;
+  font-size: 13px;
+  color: var(--bright-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card__change:hover {
+  text-decoration: underline;
+  color: var(--desaturated-blue);
+}
+
+.card__button {
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  font-family: 'RedHatDisplay-Medium', sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.8rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px -10px var(--bright-blue);
+  margin-bottom: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.card__button:hover {
+  background-color: hsl(245, 100%, 72%);
+}
+
+.card__cancel {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: 'RedHatDisplay-Medium', sans-serif;
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card__cancel:hover {
+  color: var(--dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url(../images/pattern-background-mobile.svg), var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+}
