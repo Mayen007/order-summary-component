@@ -40,8 +40,8 @@ body {
   font-family: 'RedHatDisplay-Medium', sans-serif;
   color: var(--dark-blue);
   background: url(../images/pattern-background-desktop.svg), var(--pale-blue);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-size: 100% 50vmin;
   background-position: top;
 }
 
@@ -79,8 +79,7 @@ body {
 }
 
 .card__description {
-  font-size: 16px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
   color: var(--desaturated-blue);
   line-height: 1.5;
@@ -130,13 +129,12 @@ body {
 
 .card__subheading {
   font-family: 'RedHatDisplay-Bold', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--desaturated-blue);
   margin-top: 0.1rem;
 }
 
 .card__change {
-  font-family: 'RedHatDisplay-Medium', sans-serif;
   font-size: 13px;
   color: var(--bright-blue);
   cursor: pointer;
@@ -195,14 +193,19 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--bright-blue);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
   body {
     background: url(../images/pattern-background-mobile.svg), var(--pale-blue);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-x;
+    background-size: 100% 50vmin;
     background-position: top;
+  }
+
+  .card__description {
+    font-size: 1.1rem;
   }
 }
