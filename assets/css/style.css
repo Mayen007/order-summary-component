@@ -40,7 +40,7 @@ body {
   font-family: 'RedHatDisplay-Medium', sans-serif;
   color: var(--dark-blue);
   background: url(../images/pattern-background-desktop.svg), var(--pale-blue);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-size: 100% 50vmin;
   background-position: top;
 }
@@ -200,7 +200,7 @@ body {
 @media (max-width: 768px) {
   body {
     background: url(../images/pattern-background-mobile.svg), var(--pale-blue);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-size: 100% 50vmin;
     background-position: top;
   }
